@@ -1,0 +1,76 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td, th {
+    margin-left: 0;
+    padding: 4px;
+}
+
+table {
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(248, 91, 91);
+    color: rgb(255, 255, 255);
+
+}
+
+.crud-button {
+    color: black;
+    background-color: rgb(179, 250, 64);
+    border-radius: 5px;
+    border: none;
+    padding: 3px;
+}
+
+.crud-button:hover {
+    box-shadow: 0.5px 0.5px 4px 0.5px;
+}
+
+.page-button {
+    background-color: rgb(158, 230, 44);
+    border-radius: 5px;
+    color: beige;
+    font-weight: 600;
+    padding: 2.6px;
+    margin-top: 10px;
+    margin-right: auto;
+}
+
+.page-button:hover {
+    box-shadow: 0.5px 0.5px 4px 0.5px;
+    background-color: rgb(10, 126, 126);
+}
+
+.table-container {
+    padding: 0px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 20%;
+    margin-right: 15%;
+}
+
+h1 {
+    margin-left: 5%;
+    margin-top: 3%;
+    font-size: 300%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+div > form > label {
+    font-size: 18px;
+}
+
+.form-input {
+    width: 250px;
+    height: 20px;
+    border-radius: 4px;
+}
