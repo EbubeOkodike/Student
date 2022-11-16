@@ -19,7 +19,8 @@ return new class extends Migration
             $table->char('lastname');
             $table->string('email');
             $table->date('date_of_birth');
-            $table->string('pic_path');
+            $table->string('image');
+            $table->char('password');
             $table->timestamps();
         });
     }

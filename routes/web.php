@@ -21,11 +21,15 @@ use App\Models\student;
     return view('home');
 });*/
 
-Route::get('home', [studentController::class, 'index'])->name('home'); /* home page route */
+Route::get('/', [studentController::class, 'index'])->name('home'); /* home page route */
 
-Route::get('create', [studentController::class, 'create']); /* create page route */
+Route::get('register', [studentController::class, 'register']); /* register page route */
 
-Route::post('store', [studentController::class, 'store']); /* store route */
+Route::post('createAccount', [studentController::class, 'createAccount']); /* createAccount route */
+
+Route::get('login', [studentController::class, 'login']); /* login page route */
+
+Route::post('authenticate', [studentController::class, 'authenticate']); /* authenticate route */
 
 Route::get('view/{id}', [studentController::class, 'view']); /* edit page route */
 

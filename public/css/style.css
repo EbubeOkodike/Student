@@ -2,9 +2,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-td, th {
+th {
     margin-left: 0;
     padding: 4px;
+}
+
+td {
+    padding: 8px;
 }
 
 table {
@@ -13,9 +17,8 @@ table {
 }
 
 tr:nth-child(even) {
-    background-color: rgb(248, 91, 91);
+    background-color: rgb(228, 55, 55);
     color: rgb(255, 255, 255);
-
 }
 
 .crud-button {
@@ -40,6 +43,21 @@ tr:nth-child(even) {
     margin-right: auto;
 }
 
+#image {
+    background-color: rgb(158, 230, 44);
+    border-radius: 5px;
+    color: beige;
+    font-weight: 600;
+    padding: 2.6px;
+    margin-top: 10px;
+    margin-right: auto;
+}
+
+#image:hover {
+    box-shadow: 0.5px 0.5px 4px 0.5px;
+    background-color: rgb(10, 126, 126);
+}
+
 .page-button:hover {
     box-shadow: 0.5px 0.5px 4px 0.5px;
     background-color: rgb(10, 126, 126);
@@ -49,8 +67,8 @@ tr:nth-child(even) {
     padding: 0px;
     padding-right: 0;
     padding-left: 0;
-    margin-left: 20%;
-    margin-right: 15%;
+    margin-left: 15%;
+    margin-right: 10%;
 }
 
 h1 {
@@ -58,6 +76,11 @@ h1 {
     margin-top: 3%;
     font-size: 300%;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.alert {
+    font-weight:500;
+    color: rgb(228, 55, 55)
 }
 
 .form-container {
