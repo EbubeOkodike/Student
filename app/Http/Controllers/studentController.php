@@ -85,16 +85,14 @@ class studentController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'firstname' => 'required',            'lastname' => 'required',
-            'email' => 'required|unique:students,email|email',
-            'date_of_birth' => 'required',
-            'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
-            'password' => 'required|max:8|min:6'
+            'email' => 'email',
+            'image' => 'image|mimes:jpg,png,jpeg,gif,svg|max:2048',
+            'password' => 'max:8|min:6'
         ]);
 
         $path = $request->file('image')->store('public/images');
 
-        $student = new student;
+        $student = student::find($id);
         $student->firstname = $request->firstname;
         $student->lastname = $request->lastname;
         $student->email = $request->email;

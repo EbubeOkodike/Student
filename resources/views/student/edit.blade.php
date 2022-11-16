@@ -27,7 +27,7 @@
     @endif
 
     <div class="form-container">
-        <form method="POST" autocomplete="on" autocapitalize="on" action="{{ url('store') }}">
+        <form method="POST" autocomplete="on" autocapitalize="on" action="{{ url('update', $student->id) }}">
 
             @csrf
             <label class="form-label" for='firstname'>First Name:</label><br>
